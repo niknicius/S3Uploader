@@ -4,10 +4,12 @@ public class Application {
 
     private String location;
     private String name;
+    private String handler;
 
-    public Application(String location, String name) {
+    public Application(String location, String name, String handler) {
         this.location = location;
         this.name = name;
+        this.handler = handler;
     }
 
     public String getLocation() {
@@ -24,5 +26,13 @@ public class Application {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getHandler() {
+        return handler;
+    }
+
+    public void setHandler(String handler) {
+        this.handler = handler;
     }
 }
